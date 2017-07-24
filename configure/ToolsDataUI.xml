@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<!--功能工具树形结构-->
+<root title="工具库配置">
+
+    <class filter="global" label="全局变量设置">
+	    <item label="主窗口界面">
+		    <scriptfile label="执行脚本">GlobalSetting</scriptfile>
+			<inputParams label="全局参数">
+				<parentDispViewHandle label="图像显示窗口的父窗">
+					<name>parentDispViewHandle</name>
+					<type>Long</type>
+				</parentDispViewHandle>
+				<logViewHandle label="图像显示窗口的大小">
+					<name>logViewHandle</name>
+					<type>Long</type>
+				</logViewHandle>
+			</inputParams>	
+		</item>
+	</class>	
+
+
+    <class label="采集">
+	    <item label="读取图像-二值化(线程1)">
+		    <scriptfile label="执行脚本(线程1)">ReadImage_Threshold_T1</scriptfile>	
+			<inputParams label="二值化参数">
+				<ThresholdLowValue label="低阈值">
+					<name>lowValue</name>
+					<type>Long</type>
+					<value>20</value>
+				</ThresholdLowValue>
+				<ThresholdHighValue label="高阈值">
+					<name>highValue</name>
+					<type>Long</type>
+					<value>120</value>
+				</ThresholdHighValue>
+			</inputParams>				
+		</item>
+	    <item label="读取图像-二值化(线程2)">
+		    <scriptfile label="执行脚本(线程2)">ReadImage_Threshold_T2</scriptfile>	
+			<inputParams label="二值化参数">
+				<ThresholdLowValue label="低阈值">
+					<name>lowValue</name>
+					<type>Long</type>
+					<value>20</value>
+				</ThresholdLowValue>
+				<ThresholdHighValue label="高阈值">
+					<name>highValue</name>
+					<type>Long</type>
+					<value>120</value>
+				</ThresholdHighValue>
+			</inputParams>						
+		</item>
+	</class>		
+
+    <class label="图像处理">
+	    <item label="二值化">
+		    <scriptfile label="执行脚本">Threshold</scriptfile>			
+		</item>
+	</class>	
+</root>
