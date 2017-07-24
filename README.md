@@ -6,4 +6,4 @@
 
 ### 安装步骤 ###
 1. 安装64位Python27
-2. 将Package文件拷贝至Python27安装目录下，比如C:/Python27目录下
+2. 将Tools/Package文件拷贝至Python27安装目录下，比如C:/Python27目录下
