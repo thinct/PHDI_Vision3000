@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<!--功能工具树形结构-->
+<root title="工具库配置">
+
+    <class filter="global" label="全局变量设置">
+	    <item label="主窗口界面">
+		    <scriptfile label="执行脚本">GlobalSettingExample</scriptfile>
+			<inputParams label="全局参数">
+				<parentWindowHandle label="图像显示窗口的父窗">
+					<name>parentWindowHandle</name>
+					<type>Long</type>
+				</parentWindowHandle>
+				<parentWindowRect label="图像显示窗口的大小">
+					<name>x,y,width,height</name>
+					<type>IntArray</type>
+					<value>0,0,0,0</value>
+				</parentWindowRect>
+			</inputParams>	
+			<outputResult label="输出结果">
+				<windowHandle label="图像显示窗口">
+					<name>windowHandle</name>
+					<type>Long</type>
+				</windowHandle>
+			</outputResult>
+		</item>
+	</class>				
+
+    <class label="采集">
+	    <item label="从文件获取图像">
+		    <scriptfile label="执行脚本">ReadImageByFileExample</scriptfile>
+		</item>
+		
+	    <item label="从相机获取图像">
+		    <scriptfile label="执行脚本">ReadImageByCameraExample</scriptfile>
+			<inputParams label="相机参数">
+			</inputParams>					
+		</item>
+	</class>	
+
+	<class label="标定">
+	    <item label="定位">
+		    <scriptfile label="执行脚本">TemplateMatchExample</scriptfile>	
+			<inputParams label="输入参数">
+			</inputParams>
+			<outputResult label="输出结果">
+			</outputResult>			
+		</item>
+	</class>
+		
+	<class label="对齐">
+		<item label="与直线边缘对齐">
+		    <scriptfile label="执行脚本">StraightEdgeForLeft</scriptfile>			
+			<inputParams label="输入参数">
+				<ROI label="找直线ROI参数">
+					<name>centerX, centerY, width, height, angle</name>
+					<type>FloatArray</type>
+					<value>0,0,0,0,0</value>
+				</ROI>
+			</inputParams>			
+		</item>
+	</class>	
+	
+</root>
