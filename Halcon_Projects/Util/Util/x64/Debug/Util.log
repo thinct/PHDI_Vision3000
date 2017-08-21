@@ -1,0 +1,53 @@
+﻿Build started 2017/8/19 17:07:30.
+     1>Project "D:\Vision3000-Halcon\Util\Util\Util.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\MVTec\HALCON-12.0\include" /I"C:\Program Files\MVTec\HALCON-12.0\include\halconcpp" /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"x64\Debug\Util.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\MVTec\HALCON-12.0\include" /I"C:\Program Files\MVTec\HALCON-12.0\include\halconcpp" /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\Util.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt HalconWindowDlg.cpp Util.cpp UtilAPI.cpp
+         UtilAPI.cpp
+         Util.cpp
+         HalconWindowDlg.cpp
+     1>HalconWindowDlg.cpp(69): warning C4244: '=' : conversion from 'double' to 'Hlong', possible loss of data
+     1>HalconWindowDlg.cpp(70): warning C4244: '=' : conversion from 'double' to 'Hlong', possible loss of data
+     1>HalconWindowDlg.cpp(71): warning C4244: '=' : conversion from 'double' to 'Hlong', possible loss of data
+     1>HalconWindowDlg.cpp(72): warning C4244: '=' : conversion from 'double' to 'Hlong', possible loss of data
+     1>HalconWindowDlg.cpp(73): warning C4244: '=' : conversion from 'double' to 'Hlong', possible loss of data
+     1>HalconWindowDlg.cpp(74): warning C4244: '=' : conversion from 'double' to 'Hlong', possible loss of data
+     1>HalconWindowDlg.cpp(76): warning C4244: '=' : conversion from 'Hlong' to 'double', possible loss of data
+     1>HalconWindowDlg.cpp(77): warning C4244: '=' : conversion from 'Hlong' to 'double', possible loss of data
+     1>HalconWindowDlg.cpp(78): warning C4244: '=' : conversion from 'Hlong' to 'double', possible loss of data
+     1>HalconWindowDlg.cpp(79): warning C4244: '=' : conversion from 'Hlong' to 'double', possible loss of data
+     1>HalconWindowDlg.cpp(83): warning C4244: '=' : conversion from 'double' to 'Hlong', possible loss of data
+     1>HalconWindowDlg.cpp(84): warning C4244: '=' : conversion from 'double' to 'Hlong', possible loss of data
+     1>HalconWindowDlg.cpp(85): warning C4244: '=' : conversion from 'double' to 'Hlong', possible loss of data
+     1>HalconWindowDlg.cpp(86): warning C4244: '=' : conversion from 'double' to 'Hlong', possible loss of data
+     1>HalconWindowDlg.cpp(87): warning C4244: '=' : conversion from 'double' to 'Hlong', possible loss of data
+     1>HalconWindowDlg.cpp(88): warning C4244: '=' : conversion from 'double' to 'Hlong', possible loss of data
+     1>HalconWindowDlg.cpp(90): warning C4244: '=' : conversion from 'Hlong' to 'double', possible loss of data
+     1>HalconWindowDlg.cpp(91): warning C4244: '=' : conversion from 'Hlong' to 'double', possible loss of data
+     1>HalconWindowDlg.cpp(92): warning C4244: '=' : conversion from 'Hlong' to 'double', possible loss of data
+     1>HalconWindowDlg.cpp(93): warning C4244: '=' : conversion from 'Hlong' to 'double', possible loss of data
+     1>HalconWindowDlg.cpp(148): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>HalconWindowDlg.cpp(150): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>HalconWindowDlg.cpp(156): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>HalconWindowDlg.cpp(165): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>HalconWindowDlg.cpp(191): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>HalconWindowDlg.cpp(193): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>HalconWindowDlg.cpp(199): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>HalconWindowDlg.cpp(208): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /Ix64\Debug\ /nologo /fo"x64\Debug\Util.res" Util.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Vision3000-Halcon\Util\x64\Debug\Util.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\MVTec\HALCON-12.0\lib\x64-win64" halconcpp.lib /DEF:".\Util.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\Vision3000-Halcon\Util\x64\Debug\Util.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Vision3000-Halcon\Util\x64\Debug\Util.lib" /MACHINE:X64 /DLL x64\Debug\Util.res
+         x64\Debug\HalconWindowDlg.obj
+         x64\Debug\stdafx.obj
+         x64\Debug\Util.obj
+         x64\Debug\UtilAPI.obj
+            Creating library D:\Vision3000-Halcon\Util\x64\Debug\Util.lib and object D:\Vision3000-Halcon\Util\x64\Debug\Util.exp
+         Util.vcxproj -> D:\Vision3000-Halcon\Util\x64\Debug\Util.dll
+     1>Done Building Project "D:\Vision3000-Halcon\Util\Util\Util.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.59

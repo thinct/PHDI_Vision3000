@@ -1,0 +1,35 @@
+﻿Build started 2017/6/24 21:19:28.
+     1>Project "D:\Vision3000-Halcon\Util\Util\Util.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files\MVTec\HALCON-12.0\include" /I"C:\Program Files\MVTec\HALCON-12.0\include\halconcpp" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\Util.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files\MVTec\HALCON-12.0\include" /I"C:\Program Files\MVTec\HALCON-12.0\include\halconcpp" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Util.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Util.cpp UtilAPI.cpp
+         UtilAPI.cpp
+         Util.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /IDebug\ /nologo /fo"Debug\Util.res" Util.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Vision3000-Halcon\Util\Debug\Util.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\MVTec\HALCON-12.0\lib\x64-win64" halconcpp.lib /DEF:".\Util.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\Vision3000-Halcon\Util\Debug\Util.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Vision3000-Halcon\Util\Debug\Util.lib" /MACHINE:X86 /DLL Debug\Util.res
+         Debug\stdafx.obj
+         Debug\Util.obj
+         Debug\UtilAPI.obj
+            Creating library D:\Vision3000-Halcon\Util\Debug\Util.lib and object D:\Vision3000-Halcon\Util\Debug\Util.exp
+     1>UtilAPI.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall HalconCpp::HTuple::HTuple(void)" (__imp_??0HTuple@HalconCpp@@QAE@XZ) referenced in function _Vision3000_Halcon_CreateWindow
+     1>UtilAPI.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall HalconCpp::HTuple::HTuple(long)" (__imp_??0HTuple@HalconCpp@@QAE@J@Z) referenced in function _Vision3000_Halcon_CreateWindow
+     1>UtilAPI.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall HalconCpp::HTuple::HTuple(int)" (__imp_??0HTuple@HalconCpp@@QAE@H@Z) referenced in function _Vision3000_Halcon_ImageFitWindow
+     1>UtilAPI.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall HalconCpp::HTuple::HTuple(class HalconCpp::HTuple const &)" (__imp_??0HTuple@HalconCpp@@QAE@ABV01@@Z) referenced in function _Vision3000_Halcon_DestoryWindow
+     1>UtilAPI.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall HalconCpp::HTuple::~HTuple(void)" (__imp_??1HTuple@HalconCpp@@UAE@XZ) referenced in function "public: virtual void * __thiscall HalconCpp::HTuple::`scalar deleting destructor'(unsigned int)" (??_GHTuple@HalconCpp@@UAEPAXI@Z)
+     1>UtilAPI.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) class HalconCpp::HTuple __cdecl HalconCpp::operator-(class HalconCpp::HTuple const &,int)" (__imp_??GHalconCpp@@YA?AVHTuple@0@ABV10@H@Z) referenced in function _Vision3000_Halcon_ImageFitWindow
+     1>UtilAPI.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) void __cdecl HalconCpp::SetWindowExtents(class HalconCpp::HTuple const &,class HalconCpp::HTuple const &,class HalconCpp::HTuple const &,class HalconCpp::HTuple const &,class HalconCpp::HTuple const &)" (__imp_?SetWindowExtents@HalconCpp@@YAXABVHTuple@1@0000@Z) referenced in function _Vision3000_Halcon_ResizeWindow
+     1>UtilAPI.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) unsigned int __cdecl HalconCpp::get_image_size(class HalconCpp::HObject const &,class HalconCpp::HTuple *,class HalconCpp::HTuple *)" (__imp_?get_image_size@HalconCpp@@YAIABVHObject@1@PAVHTuple@1@1@Z) referenced in function _Vision3000_Halcon_ImageFitWindow
+     1>UtilAPI.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) unsigned int __cdecl HalconCpp::new_extern_window(class HalconCpp::HTuple const &,class HalconCpp::HTuple const &,class HalconCpp::HTuple const &,class HalconCpp::HTuple const &,class HalconCpp::HTuple const &,class HalconCpp::HTuple *)" (__imp_?new_extern_window@HalconCpp@@YAIABVHTuple@1@0000PAV21@@Z) referenced in function _Vision3000_Halcon_CreateWindow
+     1>UtilAPI.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) unsigned int __cdecl HalconCpp::close_window(class HalconCpp::HTuple const &)" (__imp_?close_window@HalconCpp@@YAIABVHTuple@1@@Z) referenced in function _Vision3000_Halcon_DestoryWindow
+     1>UtilAPI.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) unsigned int __cdecl HalconCpp::set_part(class HalconCpp::HTuple const &,class HalconCpp::HTuple const &,class HalconCpp::HTuple const &,class HalconCpp::HTuple const &,class HalconCpp::HTuple const &)" (__imp_?set_part@HalconCpp@@YAIABVHTuple@1@0000@Z) referenced in function _Vision3000_Halcon_ImageFitWindow
+     1>UtilAPI.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) unsigned int __cdecl HalconCpp::disp_obj(class HalconCpp::HObject const &,class HalconCpp::HTuple const &)" (__imp_?disp_obj@HalconCpp@@YAIABVHObject@1@ABVHTuple@1@@Z) referenced in function _Vision3000_Halcon_DisplayObj
+     1>D:\Vision3000-Halcon\Util\Debug\Util.dll : fatal error LNK1120: 12 unresolved externals
+     1>Done Building Project "D:\Vision3000-Halcon\Util\Util\Util.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:04.92
