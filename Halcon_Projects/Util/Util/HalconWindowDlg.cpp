@@ -125,6 +125,12 @@ void HalconWindowDlg::ShowImage()
 		{
 			SetPart(m_hWnd, m_dDispImagePartRow0, m_dDispImagePartCol0, m_dDispImagePartRow1 - 1, m_dDispImagePartCol1 - 1);
 			DispObj(m_hImage, m_hWnd);
+			if (m_hXLD.IsInitialized()) {
+				DispObj(m_hXLD, m_hWnd);
+			}
+			if (m_hRegion.IsInitialized()) {
+				DispObj(m_hRegion, m_hWnd);
+			}
 		}
 
 		SetSystem("flush_graphic", "true");
@@ -144,8 +150,11 @@ long HalconWindowDlg::DisplayImage(HObject* hImage)
 
 
 	GetImageSize(m_hImage, &m_hWidth, &m_hHeight);
+	//CString info;
+	//info.Format(L"(%d, %d)", m_hWidth.I(), m_hHeight.I());
+	//AfxMessageBox(info);
 	//ÉèÖÃ´°¿Ú
-	float fImage = m_hWidth.D() / m_hHeight.D();
+	float fImage = m_hWidth.I() / m_hHeight.I();
 	float fWindow = (float)m_rtImage.Width() / m_rtImage.Height();
 	float Row0 = 0, Col0 = 0, Row1 = m_hHeight.I() - 1, Col1 = m_hWidth.I() - 1;
 	if (fWindow > fImage)
@@ -172,6 +181,21 @@ long HalconWindowDlg::DisplayImage(HObject* hImage)
 
 	ShowImage();
 
+	return 0;
+}
+
+long HalconWindowDlg::DisplayXLD(HObject* XLD)
+{
+	m_hXLD = *XLD;
+	ShowImage();
+	return 0;
+}
+
+
+long HalconWindowDlg::DisplayRegion(HObject* Region)
+{
+	m_hRegion = *Region;
+	ShowImage();
 	return 0;
 }
 

@@ -28,6 +28,8 @@ protected:
 
 public:
 	long DisplayImage(HObject* hImage);
+	long DisplayXLD(HObject* XLD);
+	long DisplayRegion(HObject* Region);
 	HTuple WindowHandle() const;
 
 private:
@@ -41,6 +43,8 @@ private:
 private:
 	HTuple   m_hWnd; //显示窗口句柄
 	HObject  m_hImage;//图像对象
+	HObject  m_hXLD;//图像对象
+	HObject  m_hRegion;//图像对象
 	HTuple   m_hWidth;//图像宽
 	HTuple   m_hHeight;
 

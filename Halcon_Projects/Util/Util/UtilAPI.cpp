@@ -2,6 +2,7 @@
 #include "stdafx.h"
 #include "UtilAPI.h"
 #include <functional>
+#include <atlconv.h>
 #include "HalconWindowDlg.h"
 
 #define HCPP_LEGACY_API
@@ -76,14 +77,27 @@ get_image_size(*img, &width, &height);
 set_part(htWindow, 0, 0, height - 1, width - 1);
 END_IMPLEMENT
 
-BEGIN_IMPLEMENT(Halcon_DisplayObj(Long winHandle, Long objHandle))
+BEGIN_IMPLEMENT(Halcon_DisplayObj(Long winHandle, const char* model, Long objHandle))
 Hobject* obj = (Hobject*)objHandle;
-if (halconWndDlg) {
-	halconWndDlg->DisplayImage(obj);
-}
-else {
+if (nullptr == halconWndDlg) {
 	HTuple htWindow = *((HTuple*)winHandle);
 	disp_obj(*obj, htWindow);
+}
+
+if (halconWndDlg) {
+	if (0 == strcmp("image", model)) {
+		halconWndDlg->DisplayImage(obj);
+	}
+	else if (0 == strcmp("xld", model)) {
+		halconWndDlg->DisplayXLD(obj);
+	}
+	else if (0 == strcmp("region", model)) {
+		halconWndDlg->DisplayRegion(obj);
+	}
+	else {
+	USES_CONVERSION;
+		AfxMessageBox(CString(L"不支持的类型!") + A2W(model));
+	}
 }
 END_IMPLEMENT
 

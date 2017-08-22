@@ -18,7 +18,7 @@
 DLL_DECLARE(Halcon_CreateWindow(Long parentHandle, Long* winHandle))
 DLL_DECLARE(Halcon_ResizeWindow(Long winHandle))
 DLL_DECLARE(Halcon_ImageFitWindow(Long imageHandle, Long winHandle))
-DLL_DECLARE(Halcon_DisplayObj(Long winHandle, Long objHandle))
+DLL_DECLARE(Halcon_DisplayObj(Long winHandle, const char* model, Long objHandle))
 DLL_DECLARE(Halcon_DestoryWindow(Long winHandle))
 DLL_DECLARE(Halcon_CountSecond(double* second))
 DLL_DECLARE(Halcon_ReadImage(const char* fileName, Long* objHandle))
